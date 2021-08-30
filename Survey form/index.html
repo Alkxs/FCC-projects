@@ -1,0 +1,114 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+  <header>
+    <h1 id="title">Alks tech Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the company</p>
+  </header>
+  
+      <form action="#" id="survey-form" class="form-label">
+          <div class="items">
+              <label for="name" id="name-label">Name</label>
+              <input type="text" placeholder="Enter your name" id="name" 
+                    class="form-control" name ="name"required>
+           </div>
+                                                                                     
+           <div class="items">                                                          
+              <label for="email" id="email-label" >Email</label> 
+              <input type="email" class="form-control" placeholder="Enter your email" id="email" name ="email" required>   
+          </div>   
+          <div class="items">
+              <label for="number" id="number-label">Age (optional)</label>
+              <input type="number" placeholder="Enter your age" id="number" name ="age " min="0" max="100" class="form-control" required>
+          </div>    
+           <div class="items">               
+              <label for="dropdown">Which option best describe your current role?</label>
+                  <select name="dropdown" id="dropdown" class="form-control" required>
+                      <option disabled selected>select an option</option>
+                      <option value="Student">javascript</option>
+                      <option value="Full-time job">phyton</option>
+                      <option value="full-time learner">java</option>
+                      <option value="Prefer not to say">C++</option>
+                      <option value="other">other</option>
+                   </select>                                
+           </div>                                                                                               
+           <div class="items">
+             <p>would you recommend my website to a friend?</p>
+               <p>              
+              <label>                       
+              <input type="radio" id="yes" name="answer" value="yes" checked>Yes
+              </label>
+              </p>
+               <p>                                                     
+              <label>                      
+              <input type="radio" id="NO" name="answer" value="no">No
+              </label>                       
+              </p>              
+              <label>                                      
+              <input type="radio" id="Maybe" name="answer" value="maybe">Maybe
+              </label>    
+              </p>                                                         
+          </div>
+          <div class="items">               
+              <label for="favorite">What is your favorite programming language?</label>
+                  <select name="favorite" id="favorite" class="form-control" required>
+                      <option value="" disabled selected>select an option</option>  
+                      <option value="javascript">javascript</option>
+                      <option value="phyton">phyton</option>
+                      <option value="java">java</option>
+                      <option value="C++">C++</option>
+                      <option value="C++">C++</option>
+                      <option value="other">other</option>
+                   </select>                                
+           </div>
+           <div class="items"> 
+              <p>What do you need to become a great web developer?</p>
+                <p>
+                 <label>
+                  <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">study hard
+                 </label> 
+                </p>
+                <p>
+                 <label>
+                   <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2">To be smart
+                 </label>
+                </p>
+                <p>
+                 <label>
+                   <input type="checkbox" id="checkbox3" name="checkbox3" value="checkbox3">have talent                                       
+                 </label> 
+                </p>
+                <p>
+                 <label>
+                   <input type="checkbox" id="checkbox4" name="checkbox4" value="checkbox4">have problem-solving skills
+                 </label> 
+                </p>                                                                           
+                <p>
+                 <label>
+                   <input type="checkbox" id="checkbox5" name="checkbox5" value="checkbox5">To be passionate
+                 </label> 
+                </p>
+            </div> 
+            <div class="items">
+               <p>any comments or suggestions?</label></p>
+                <textarea id="comments" name="comments" placeholder="Enter your comment here..."
+                rows="6" cols="50" required></textarea>                   
+           </div>                                  
+            <div class="items"> 
+                <button type="submit" id="submit">Submit</button>
+           </div>                                  
+        </form>
+</div>
+</body>
+</html>
